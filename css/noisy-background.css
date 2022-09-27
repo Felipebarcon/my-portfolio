@@ -1,0 +1,31 @@
+/* NOISY BACKGROUND */
+.noise {
+  /*position: fixed;*/
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("https://www.marvinx.com/assets/images/noise.png");
+  background-size: auto;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-position: 0 0;
+
+  animation-duration: 1s;
+  animation-name: noise;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(10);
+}
+
+.salmon {
+  background-color: #555555;
+}
+
+@keyframes noise {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 500px 0;
+  }
+}

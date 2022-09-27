@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link crossorigin href="https://fonts.gstatic.com" rel="preconnect" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Lato:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=El+Messiri:wght@400;600;700&family=Lato:wght@400;700&display=swap"
       rel="stylesheet"
     />
     <script
@@ -23,8 +23,17 @@
 
   <body>
     <main>
+      <!-- Loader Page -->
+      <div class="main">
+        <div class="loader">
+          <p class="loader--text">Les baobabs</p>
+          <p class="loader--text">avant de grandir</p>
+          <p class="loader--text">ça commence par être petit.</p>
+        </div>
+      </div>
+
       <!-- HEADER-->
-      <header class="header salmon noise">
+      <header class="header salmon noise hidden">
         <!-- NAVIGATION -->
         <nav class="nav">
           <img
@@ -33,12 +42,12 @@
             data-version-number="3.0"
             designer="Felipe"
             id="logo"
-            src="img/logo1.png"
+            src="img/logowhite.png"
           />
           <ul class="nav__links">
             <li class="nav__item">
               <a
-                class="nav__link"
+                class="nav__link nav__social"
                 href="https://github.com/Felipebarcon"
                 target="_blank"
                 ><i class="fa-brands fa-github nav-icons"></i
@@ -46,7 +55,7 @@
             </li>
             <li class="nav__item">
               <a
-                class="nav__link"
+                class="nav__link nav__social"
                 href="https://www.linkedin.com/in/felipe-barcon/"
                 target="_blank"
                 ><i class="fa-brands fa-linkedin nav-icons"></i
@@ -54,16 +63,20 @@
             </li>
             <li class="nav__item">
               <a
-                class="nav__link"
+                class="nav__link nav__social"
                 href="https://twitter.com/felipe_barcon"
                 target="_blank"
                 ><i class="fa-brands fa-twitter nav-icons"></i
               ></a>
             </li>
+          </ul>
+          <ul>
             <li class="nav__item">
-              <a class="nav__link nav__link--btn btn--show-modal" href="#"
-                >Menu</a
-              >
+              <a
+                class="nav__link nav__link--btn btn--show-modal menu-icon"
+                href="#"
+                ><i class="fa-regular fa-circle-right nav-icons"></i>
+              </a>
             </li>
           </ul>
         </nav>
@@ -71,17 +84,25 @@
         <!-- HOME TITLE-->
         <div class="header__title">
           <span class="paralax-title">Felipe Barcon Portfolio</span>
+          <blockquote>
+            <p class="title-quote">
+              Faites que le rêve dévore votre vie afin que la vie ne dévore pas
+              votre rêve.
+            </p>
+          </blockquote>
         </div>
       </header>
-
-      <section class="section" id="section--1">
-        <h2>Coming soon</h2>
-      </section>
     </main>
 
     <!-- SCRIPT -->
     <script src="js/vendor/modernizr-3.11.2.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+
+    <!-- Modal Window-->
+    <div class="modal hidden">
+      <button class="btn--close-modal">&times;</button>
+    </div>
+    <div class="overlay hidden"></div>
   </body>
 </html>

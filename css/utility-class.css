@@ -1,0 +1,20 @@
+.hidden {
+  display: none !important;
+}
+
+.target {
+  font-weight: bold;
+  color: #fbfbfb;
+  animation-name: topToBottom;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+}
+
+@keyframes topToBottom {
+  0% {
+    transform: translateY(-200px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
