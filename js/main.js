@@ -5,6 +5,7 @@ const btnOpenModal = document.querySelectorAll(".btn--show-modal");
 const loaderTexts = document.querySelectorAll(".loader--text");
 const main = document.querySelector(".main");
 const header = document.querySelector(".header");
+const imgLoading = document.querySelector(".loader--img");
 ///////////////////////////////////////
 // Loader Text Animation
 
@@ -15,10 +16,15 @@ loaderTexts.forEach((t) => {
   });
 });
 
-setInterval(function () {
+setTimeout(function () {
   main.classList.add("hidden");
   header.classList.remove("hidden");
-}, 1500);
+  header.classList.add("animation");
+}, 4000);
+
+setTimeout(function () {
+  header.classList.remove("animation");
+}, 7000);
 
 /* TITLE ANIMATION */
 let didScroll = false;

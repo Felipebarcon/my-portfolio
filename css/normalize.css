@@ -14,5 +14,7 @@ body {
   font-weight: 400;
   color: #444;
   line-height: 1.9;
-  background-color: #f3f3f3;
+  background-image: url("/img/petit-prince.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }

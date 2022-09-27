@@ -4,15 +4,17 @@
   justify-content: center;
   background-color: #222222;
   height: 100vh;
+  transition: all 0.3s;
 }
 
 .loader {
-  align-items: flex-start;
-}
-
-.loader--text {
   font-size: 6.4rem;
   font-weight: lighter;
   font-family: "Lato", sans-serif;
   color: #f3f3f3;
+}
+
+.loader span {
+  font-size: 3.2rem;
+  font-style: italic;
 }

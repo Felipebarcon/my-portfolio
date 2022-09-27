@@ -18,3 +18,23 @@
     transform: translateY(0px);
   }
 }
+
+.animation {
+  animation-name: bottomToTop;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+}
+
+@keyframes bottomToTop {
+  0% {
+    transform: translateY(-100rem);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.blur {
+  filter: blur(20px);
+}
