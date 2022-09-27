@@ -1,6 +1,6 @@
 /* NOISY BACKGROUND */
 .noise {
-  position: fixed;
+  /*position: fixed;*/
   top: 0;
   left: 0;
   height: 100vh;
@@ -52,7 +52,6 @@
 .nav__logo {
   height: 20rem;
   transition: all 0.3s;
-
 }
 
 .nav__title {
@@ -113,6 +112,22 @@
   justify-content: center;
   text-align: center;
 }
+
+span {
+  font-size: 8rem;
+}
+
+/* SECTION 1 */
+
+.section__1 {
+  height: 100rem;
+  padding: 15rem 3rem;
+  border-top: 1px solid #ddd;
+
+  transition: transform 1s, opacity 1s;
+}
+
+/* GENERAL */
 
 h1 {
   font-size: 8rem;
