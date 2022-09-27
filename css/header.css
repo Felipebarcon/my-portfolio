@@ -38,3 +38,9 @@ span {
   content: close-quote;
   margin-left: 1rem;
 }
+
+.underconstruction {
+  font-size: 2rem;
+  font-style: italic;
+  color: darksalmon;
+}
