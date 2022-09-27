@@ -106,6 +106,10 @@ a:hover::before {
   transform: scaleX(1);
 }
 
+.nav-icons {
+  font-size: 3.2rem;
+}
+
 /* HEADER */
 .header {
   padding: 0 3rem;
